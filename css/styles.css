@@ -68,13 +68,6 @@ h3,
 p {margin: 0;}
  .flex {display: flex;}
 
- header {border-bottom: 1px solid var(--border-color);}
- .thumb {
-    display: block;
-    height: 100%;
-    width: 100%;
- }
-
 /*  header */
 .header-nav {
     color:var(--contrast-color); 
@@ -82,6 +75,7 @@ p {margin: 0;}
     display: flex;
 }
 .header.container {
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center ;
     /* padding-top: 24px;
