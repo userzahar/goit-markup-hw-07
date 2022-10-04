@@ -30,17 +30,21 @@ body {
     padding: 0; 
 }
 .list.flex {
-    margin-left: auto;}
-.list.flex .list-item + .list-item {margin-left: 50px;}
+    margin-left: auto;
+}
+
+.header__item + .header__item {
+    margin-left: 50px;
+}
 
 
  /* Утиліти---------------------------- */
 .link {
     text-decoration: none;
+    color: inherit;
 }
-.nav-items>.link.current {
-    color:var(--accent-color);
-}
+
+
 
 html {box-sizing: border-box;}
 .visually-hidden {
@@ -69,17 +73,20 @@ p {margin: 0;}
  .flex {display: flex;}
 
 /*  header */
-.header-nav {
+.header__navigate {
     color:var(--contrast-color); 
     align-items: center;
     display: flex;
 }
-.header.container {
+.navigate__list {
+    align-items: center;
+    display: flex;
+}
+
+.header__container {
     border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center ;
-    /* padding-top: 24px;
-    padding-bottom: 25px; */
 }
 
 .logo {
@@ -91,25 +98,29 @@ p {margin: 0;}
     display: inline-block;
     margin-right: 93px;
 }
-.logo-header {color: var(--pure-black-color);}
-.header-nav .nav-items + .nav-items {
+.navigate__span {
+    color: var(--pure-black-color);
+}
+
+.navigate__items + .navigate__items {
 margin-left: 50px;
 }
-.nav-items>.link, 
-.cantacts-mail.link, 
-.contacts-tel.link {
-    display: block;
+.navigate__link, 
+.header__mail, 
+.header__tel {
     padding-top: 32px;
     padding-bottom: 32px;
     display:flex;
     align-items: center;
-    color: inherit; 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-items {
+.navigate__items {
     position: relative;
 }
-.link.current::after {
+.navigate__link--current {
+    color:var(--accent-color);
+}
+.navigate__link--current::after {
     position: absolute;
     bottom: 0;
     content: '';
@@ -119,28 +130,23 @@ margin-left: 50px;
     border-radius: 2px;
 }
 
-/* .nav-items>.current {
-    border-bottom: 4px solid var(--accent-color);
-    border-radius: 2px;
-} */
-
-.nav-items, 
-.cantacts-mail, 
-.contacts-tel {
+.navigate__items, 
+.header__mail, 
+.header__tel {
     color: inherit; 
     font-weight: 500; 
     line-height: 1.2; 
     letter-spacing: 0.02em;
     /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);     */
 }
-.nav-items.link:hover, 
-.nav-items:hover,
-.cantacts-mail:hover, 
-.contacts-tel:hover, 
-.nav-items>.link:focus,
-.nav-items:focus, 
-.cantacts-mail:focus, 
-.contacts-tel:focus {
+.navigate__items:hover, 
+.navigate__items:hover,
+.header__mail:hover, 
+.header__tel:hover, 
+.navigate__link:focus,
+.navigate__items:focus, 
+.header__mail:focus, 
+.header__tel:focus {
     color:var(--accent-color);
 }
 
@@ -373,7 +379,7 @@ padding: 60px 0 60px;
 }
 
     /* svg картинки---------------------------- */
-.contacts-icon {
+.header__icon {
     margin-right: 10px;
     fill:currentColor;
 }
