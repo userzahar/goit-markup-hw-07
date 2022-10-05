@@ -57,6 +57,7 @@ html {box-sizing: border-box;}
   }
   
 img {display: block;}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -179,13 +180,9 @@ margin-left: 50px;
     font-size: 36px;
     line-height: 1.2; 
     text-align: center;
-    margin-bottom: 50px;} 
-.title {
+    margin-bottom: 50px;
     color: var(--contrast-color);
-}
-.title.margin-none {margin-bottom: 50px;}
-
-
+} 
 
     /* секція як ми працюємо -----------------------------*/
 .section {     
@@ -220,25 +217,25 @@ margin-left: 50px;
 /* секція наша команда------------------------- */
 .team  {background-color: var(--separation-color);}
 
-.member-card__info {
+.member-product__info {
     padding: 30px 0px;    
 }
-.member-card {
+.member-product {
     justify-content: space-between;
     display: flex;
 }
 
-.member-card__item {
+.member-product__item {
     background-color: var(--pure-white-color);
     border-radius: 0 0 4px 4px;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.member-card__profession {
+.member-product__profession {
     font-size: 16px;
     line-height: 1.2;
 }
-.member-card__name {
+.member-product__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -248,7 +245,7 @@ margin-left: 50px;
 
 
 /* footer -------------------------------*/
-footer{
+.footer{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color);
@@ -380,38 +377,38 @@ padding: 60px 0 60px;
     justify-content: center; 
 }
 .filter__item:not(:first-child) {margin-left: 8px;}
-/* .project-filter>li:not(:first-child) {margin-left: 8px;} */
-.project__card { 
+
+.project__product { 
     display: flex;
     flex-wrap: wrap;
     gap:30px;
     }
-.card__item { 
+.product__item { 
     flex-basis: calc((100% - 60px) /3); 
 }
-.card__link {
+.product__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card__link:hover, 
-.card__link:focus {
+.product__link:hover, 
+.product__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card__descr { 
+.product__descr { 
     padding: 20px 24px;
     border-left: 1px solid var(--border-color); 
     border-right: 1px solid var(--border-color); 
     border-bottom: 1px solid var(--border-color);
 }
 
-.card__title { 
+.product__title { 
     color:var(--contrast-color); 
     font-weight: 700;
     font-size: 18px;
     line-height: 2; 
     letter-spacing: 0.06em;
     margin-bottom: 4px;}
-.card__subtitle {
+.product__subtitle {
     font-size: 16px;
     line-height: 1.9; 
     letter-spacing: 0.06em;
@@ -424,13 +421,13 @@ padding: 60px 0 60px;
     fill:currentColor;
 }
 
-.member-card__contacts {
+.member-product__contacts {
     display: flex;    
     margin-top: 16px;
     justify-content: center;
     gap:10px;
 }
-.member-card__link {
+.member-product__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -441,8 +438,8 @@ padding: 60px 0 60px;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.member-card__link:hover,
-.member-card__link:focus {
+.member-product__link:hover,
+.member-product__link:focus {
     background-color: var(--accent-color);
     fill: var(--pure-white-color);
 }
@@ -546,7 +543,7 @@ padding: 60px 0 60px;
 }
 /* портфоліо--------- */
 /* картки--- */
-.card__thumb::before {
+.product__thumb::before {
     position: absolute;
     top:0;
     content: '';
@@ -558,23 +555,23 @@ padding: 60px 0 60px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-.card__link:hover .card__thumb::before, 
-.card__link:focus .card__thumb::before{
+.product__link:hover .product__thumb::before, 
+.product__link:focus .product__thumb::before{
     opacity: 0.9;
     transform: translateY(0%);
 
 }
-.card__link:hover .card__text,
-.card__link:focus .card__text {
+.product__link:hover .product__text,
+.product__link:focus .product__text {
     opacity: 1;
     transform: translateY(0%);
 }
 
-.card__thumb {
+.product__thumb {
     position: relative;
     overflow: hidden;
 }
-.card__text {
+.product__text {
     position: absolute;
     top:63px;
     left: 24px;
