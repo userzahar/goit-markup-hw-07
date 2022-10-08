@@ -9,20 +9,20 @@
     background-image: linear-gradient(90deg, $gradient-color, $gradient-color), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     max-width: 1600px;
-}
-.hero__title {
-    color:$pure-white-color; 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4; 
-    letter-spacing: 0.06em; 
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    width: 696px;
-}
-.hero__button { 
-    font-weight: 700;
-    text-align: center; 
-    width: 216px;
-    height: 50px;
+    &__title {
+        color:$pure-white-color; 
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4; 
+        letter-spacing: 0.06em; 
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        width: 696px;
+    }
+    &__button { 
+        font-weight: 700;
+        text-align: center; 
+        width: 216px;
+        height: 50px;
+    }
 }
