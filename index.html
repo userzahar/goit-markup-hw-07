@@ -285,43 +285,43 @@
             <section class="section clientage">
                 <div class="container">
                     <h2 class="clientage__title title">Постійні клієнти</h2>
-                    <ul class="clientage__costumers costumers list"> 
-                        <li>
+                    <ul class="clientage__customers customers list"> 
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#ya-co"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#tagline-here"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#company"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#foster-peters"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#brand"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="customers__item">
                             <a href="" class="link customers__link">
                                 <svg class="customers__contacts">
                                     <use href="./images/symbol-defs.svg#company-box"></use>
@@ -408,7 +408,7 @@
                     <label  class="form__item">
                         <span class="form__name">Ім'я</span>
                         <input name="nickname" type="text" class="form__input" placeholder=" " required />
-                        <svg width="18" height="18">
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/symbol-defs.svg#person-form"></use>
                         </svg>
                     </label>
@@ -416,7 +416,7 @@
                     <label class="form__item">
                         <span class="form__name">Телефон</span>
                         <input name="tel"  type="tel" class="form__input" placeholder=" " required />
-                        <svg width="18" height="18">
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/symbol-defs.svg#phone-form"></use>
                         </svg>
                     </label>
@@ -424,7 +424,7 @@
                     <label  class="form__item">
                         <span class="form__name">Пошта</span>
                         <input name="mail"  type="email" class="form__input" placeholder=" " required />
-                        <svg width="18" height="18">
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/symbol-defs.svg#email-form"></use>
                         </svg>
                     </label>    
@@ -434,9 +434,9 @@
                         <textarea name="commentary" class="form__comment" placeholder="Введіть текст" rows="7" maxlength="255"></textarea>
                     </label>
 
-                    <label class="form__checkbox-block">
-                        <input type="checkbox" class="form__checkbox" name="deal" required  value="Погоджуюся з розсилкою та приймаю Умови договору" />
-                        <svg class="form__new-checkbox"><use href="./images/symbol-defs.svg#icon-check"></use></svg>Погоджуюся з розсилкою та приймаю<a href="" class="form__link">Умови договору</a>
+                    <label class="form__checkbox checkbox">
+                        <input type="checkbox" class="checkbox__icon" name="deal" required  value="Погоджуюся з розсилкою та приймаю Умови договору" />
+                        <svg class="checkbox__new-icon"><use href="./images/symbol-defs.svg#icon-check"></use></svg>Погоджуюся з розсилкою та приймаю<a href="" class="form__link"> Умови договору</a>
                     </label>   
                     
                     <button type="submit" class="form__button button">Відправити</button>

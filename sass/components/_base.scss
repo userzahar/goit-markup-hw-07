@@ -11,9 +11,16 @@ body {
     line-height: 1.2; 
     text-align: center;
     margin-bottom: 50px;
-    color: var(--contrast-color);
+    color: $contrast-color;
 } 
-
+.invite-text {
+    display: block;
+    color: $pure-white-color;
+    text-transform: uppercase;  
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 16px;
+}
 
 .list.flex {
     margin-left: auto;
@@ -83,4 +90,8 @@ p {
     border: 1px solid transparent; 
     background-color: $accent-color;
     color: $pure-white-color; 
+}
+.icon {
+    width: 20px;
+    height: 20px;
 }
