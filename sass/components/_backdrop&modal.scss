@@ -37,9 +37,10 @@
     transform-origin: center center;
     opacity: 1;
     &__text-invite {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
+        @include fonts(700, 20px, 1.06);
+        // font-weight: 700;
+        // font-size: 20px;
+        // line-height: 23px;
         text-align: center;
         color:$pure-black-color;
         margin-bottom: 12px;

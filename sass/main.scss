@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './components/base';
+@import './utils/mixins';
 @import './components/header';
 @import './components/hero-section';
 @import './components/mode-section';
@@ -11,4 +12,3 @@
 @import './components/close-icon';
 @import './components/form-modal';
 @import './components/new-checkbox';
-
